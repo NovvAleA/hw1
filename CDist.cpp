@@ -40,9 +40,10 @@ CDist CDist:: operator=(const CDist& second) {
 	return *this;
 }
 CDist CDist:: operator+(const CDist& second) {
-	this->x = this->x + second.x;
-	this->y = this->y + second.y;
-	return *this;
+	CDist tmp;
+	tmp.x = this->x + second.x;
+	tmp.y = this->y + second.y;
+	return tmp;
 }
 
 
